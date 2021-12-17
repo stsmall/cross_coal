@@ -1,1 +1,2 @@
-cross_coal
+Returns the 1 ... Nth mrca between two sets of nodes.In application this could be interpreted as the Nth cross-coalescent event between two populations.  
+The function returns the 1 ... Nth node for each tree in a tree sequence object. All events are returned since the function ascends from the tips to the Nth event. Parent nodes can be the mrca for >1 cross-coalescent events. For a simple case imagine a highly structured geneaology between two populations, where the first cross-coalescent event is also the mrca between the two populations. Here the returned node contains all 1 ... N, cross-coalescent events so the array will contain only a single node ID.
